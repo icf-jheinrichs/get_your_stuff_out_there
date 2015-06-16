@@ -1,0 +1,23 @@
+doctype
+html
+    head
+        link(rel='stylesheet', href='/css/global.css')
+    body(ng-app='demoApp')
+        #persistent-menu
+            label(for="animator" class="element-invisible") Animation Style
+            select(id="animator" ng-model="animate")
+                option(value="" selected) Choose an Animation Style
+                option(value="fade" selected) fade
+                option(value="slide" selected) slide
+            a(href="/#/map") View Map |
+            a(href="/#/phones") Back to Phones |
+            button(type="button" ng-click="locate()" ng-controller="LocateCtrl") Locate Me
+        div(id="view" ng-view class="{{animate}}")
+
+    script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+    script(src='/scripts/angular/angular.min.js')
+    script(src='/scripts/angular-route/angular-route.min.js')
+    script(src='/scripts/angular-touch/angular-touch.min.js')
+    script(src='/scripts/angular-animate/angular-animate.min.js')
+    script(src='/js/app.js')
+    script(src='/js/controllers.js')

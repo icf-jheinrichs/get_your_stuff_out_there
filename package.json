@@ -1,14 +1,17 @@
 {
-  "name": "angular-ci-cd",
+  "name": "get_your_stuff_out_there",
   "version": "0.0.1",
-  "description": "A tutorial for demonstrating behavior-driven design in support of continuous integration and delivery",
+  "description": "Tech Crunch Munch - A tutorial for demonstrating behavior-driven design in support of continuous integration and delivery",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Andrew Zeswitz <andrew.zeswitz@icfi.com>",
+  "author": "Jeff Heinrichs <jeff.heinrichs@icfi.com>",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.12.0",
+    "express-session": "^1.10.3",
+    "jade": "^1.9.2",
     "angular-mocks": "^1.3.16",
     "chai": "^3.0.0",
     "jasmine-core": "^2.3.4",

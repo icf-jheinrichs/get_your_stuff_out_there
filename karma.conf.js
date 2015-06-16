@@ -15,8 +15,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        './js/**/*.js',
-        './test/**/*.js'
+      'public/scripts/angular/angular.js',
+      'public/scripts/angular-resource/angular-resource.js',
+      'public/scripts/angular-animate/angular-animate.js',
+      'public/scripts/angular-touch/angular-touch.js',
+      'public/scripts/angular-route/angular-route.js',
+      'public/scripts/angular-mocks/angular-mocks.js',
+      'public/js/*.js',
+      'test/*.js'
     ],
 
 
@@ -24,12 +30,10 @@ module.exports = function(config) {
     exclude: [
     ],
 
-
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
     },
-
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -61,6 +65,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: true
   });
 };
